@@ -1,0 +1,133 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: #0A0F1E;
+    color: #E8EDF5;
+    font-family: 'Segoe UI', sans-serif;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 60px;
+    background-color: #0A0F1E;
+    border-bottom: 1px solid rgba(79,142,247,0.2);
+    position: sticky;
+    top: 0;
+}
+.Logo{
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #4F8EF7;
+}
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 32px;
+}
+nav ul a {
+    color: #7A88A8;
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+nav ul a:hover {
+    color: #4F8EF7;
+}
+#home {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 60px;
+    align-items: center;
+    text-align: center;
+}
+#home h1 {
+    font-size: 3rem;
+    line-height: 1.2;
+    margin-bottom: 16px;
+}
+#home p {
+    color: #7A88A8;
+    font-size: 1.1rem;
+    margin-bottom: 28px;
+}
+#home a {
+    display: inline-block;
+   background-color: #4F8EF7;
+   color: white;
+   padding: 12px 28px;
+   border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+width: fit-content;
+}
+#about , #skills , #contact {
+    padding: 80px 60px;
+    border-top: 1px solid rgba(79,142,247,0.15);
+}
+#about h2 , #skills h2 , #contact h2 {
+    font-size: 2rem;
+    margin-bottom: 16px;
+    color: #4F8EF7;
+}
+#about p ,  #contact p {
+    color: #7A88A8;
+    line-height: 1.8;
+    max-width: 600px;
+}
+#skills ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 12px;
+}
+#skills ul li {
+    background-color: rgba(79,142,247,0.1);
+    border: 1px solid rgba(79,142,247,0.3);
+    color: #4F8EF7;
+    padding: 8px 20px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+}
+#projects{
+    padding: 80px 60px;
+    border-top: 1px solid rgba(79,142,247,0.15);
+}
+#projects h2 {
+    font-size: 2rem;
+    margin-bottom: 16px;
+    color: #4F8EF7;
+}
+.projects-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fill,minmax(280px, 1fr));
+    gap: 24px;
+}
+.project-card{
+    background: #111827;
+    border: 1px solid rgba(79,142,247,0.2);
+    border-radius: 12px;
+    padding: 28px;
+}
+.project-card h3{
+    color: #E8EDF5;
+    font-size: 1.1rem;
+    margin-bottom: 12px;
+}
+.project-card p{
+    color: #7A88A8;
+    font-size: 0.9rem;
+    line-height: 1.7;
+    margin-bottom: 20px;
+}
+.project-card a{
+    color: #4F8EF7;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.85rem;
+}
