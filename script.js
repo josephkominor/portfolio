@@ -1,6 +1,12 @@
 //Typing Effect
 const text = "Front-End Developer & UI/UX Designer";
 const target = document.querySelector('#home p');
+const glow = document.querySelector('.cursor-glow');
+
+document.addEventListener('mousemove', function(e) {
+    glow.style.left = e.clientX + 'px';
+    glow.style.top = e.clientY + 'px';
+});
 let index = 0;
 
 target.textContent = '';
@@ -29,6 +35,22 @@ window.addEventListener('scroll', () => {
             current = section.getAttribute('id');
         }
     });
+
+    const skillBars = document.querySelectorAll('.skill-bar-fill');
+
+const skillObserver = new IntersectionObserver(function(entries) {
+  entries.forEach(function(entry) {
+    if (entry.isIntersecting) {
+      const fill = entry.target;
+      const percent = fill.dataset.width;
+      fill.style.width = (percent * 100) + '%';
+    }
+  });
+}, { threshold: 0.3 });
+
+skillBars.forEach(function(bar) {
+  skillObserver.observe(bar);
+});
 
     navLinks.forEach(link => {
         link.style.color = '#7A88A8'; // Reset color for all links

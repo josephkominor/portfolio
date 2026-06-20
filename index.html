@@ -20,54 +20,107 @@
         </ul>
     </nav>
     <section id="home">
+        <div class="hero-badge">Open to Opportunities</div>
         <h1>Welcome to My Portfolio <br> I'm Joseph Kominor </h1>
         <p>Front-End Developer | UI/UX Designer | Web Developer</p>
+        <p class="hero-desc">I Design and Build clean, functional web interfaces  from layout to Logic. Currently shipping real, Self-Built Projects</p>
+        <div class="hero-stats">
+            <div class="stat-box">
+                <span class="stat-num">3</span>
+                <span class="stat-label">Live Projects</span>
+            </div>
+             <div class="stat-box">
+                <span class="stat-num">2</span>
+                <span class="stat-label">Year Learning</span>
+            </div>
+             <div class="stat-box">
+                <span class="stat-num">100%</span>
+                <span class="stat-label">Self-Built</span>
+            </div>
+        </div>
+        <div class="cursor-glow"></div>
         <a href="#projects">Projects</a>
     </section>
     <section id="about">
+        <div class="about-card">
         <h2>About Me</h2>
-        <p>I'm a beginner Front-End Developer, learning to build beautiful and functional websites. I care about design as much as code</p>
+        <p>Hey, I'm Joseph 👋 I got into web development almost by accident  started messing around with HTML and CSS, and somewhere along the way it turned into something I genuinely look forward to every day. What hooked me wasn't just making things look good, it was the whole loop: designing a layout, writing the JavaScript to make it work, hunting down a bug for an hour, then finally seeing it click into place. </p>
+        </div>
     </section>
-    <section id="skills">
-        <h2>Skills</h2>
-        <ul>
-            <li>HTML5</li>
-            <li>CSS3</li>
-            <li>JavaScript</li>
-            <li>React</li>
-            <li>Git & GitHub</li>
-        </ul>
-    </section>
-    <section id="contact">
-        <h2>Contact Me</h2>
-        <p>Email: <a href="mailto:jkominor@gmail.com">jkominor@gmail.com</a></p>
 
-    </section>
-    <section id="projects">
-        <h2>Projects</h2>
-        <div class="project-grid">
-            
-            <div class ="project-card">
-                <h3>Portfolio Website</h3>
-                <p>My Personal Portfolio Built with HTML,CSS and JavaScript</p>
-                <a href="https://josephkominor.github.io/portfolio">View Project</a>
-            </div>
+   <section id="skills">
+    <h2>Skills</h2>
+    <div class="skills-grid">
 
-            <div class ="project-card">
-                <h3>Weather App</h3>
-                <p>A Weather Dashboard that fetches real data from an API. </p>
-                <a href=" https://josephkominor.github.io/weather-app/">View Weather App</a>
-            </div>
+        <div class="skill-card">
+            <div class="skill-icon">🟧</div>
+            <div class="skill-name">HTML5</div>
+            <div class="skill-bar-bg"><div class="skill-bar-fill" data-width="0.85"></div></div>
         </div>
 
-    
-            <div class ="project-card">
-                <h3>Task Manager</h3>
-                <p> A dynamic task manager that lets users add, complete and delete tasks with data saved using Local Storage so your list saves even after closing the browser.</p>
-                <a href="  https://josephkominor.github.io/task-manager/">View Task Manager</a>
-            </div>
-       
-    </section>
+        <div class="skill-card">
+            <div class="skill-icon">🟦</div>
+            <div class="skill-name">CSS3</div>
+            <div class="skill-bar-bg"><div class="skill-bar-fill" data-width="0.80"></div></div>
+        </div>
+
+        <div class="skill-card">
+            <div class="skill-icon">🟨</div>
+            <div class="skill-name">JavaScript</div>
+            <div class="skill-bar-bg"><div class="skill-bar-fill" data-width="0.65"></div></div>
+        </div>
+
+        <div class="skill-card">
+            <div class="skill-icon">⚛️</div>
+            <div class="skill-name">React</div>
+            <div class="skill-bar-bg"><div class="skill-bar-fill" data-width="0.40"></div></div>
+        </div>
+
+        <div class="skill-card">
+            <div class="skill-icon">🔧</div>
+            <div class="skill-name">Git & GitHub</div>
+            <div class="skill-bar-bg"><div class="skill-bar-fill" data-width="0.60"></div></div>
+        </div>
+
+    </div>
+</section>
+   
+    <section id="projects">
+    <h2>Projects</h2>
+    <div class="project-grid">
+
+        <div class="project-card">
+            <h3>Portfolio Website</h3>
+            <p>This very site — designed and built from scratch, line by line. A dark-themed, fully responsive portfolio with a typing animation, scroll-spy navigation, and a cursor-reactive glow effect. No templates, no page builders — just HTML, CSS, and JavaScript I wrote and debugged myself.</p>
+            <a href="https://josephkominor.github.io/portfolio">View Project</a>
+        </div>
+
+        <div class="project-card">
+            <h3>Weather App</h3>
+            <p>Type any city, get real-time weather instantly. Built using the Fetch API to pull live data from OpenWeatherMap — my first real project working with asynchronous JavaScript, external APIs, and proper error handling for invalid city names.</p>
+            <a href="https://josephkominor.github.io/weather-app/">View Weather App</a>
+        </div>
+
+        <div class="project-card">
+            <h3>Task Manager</h3>
+            <p>A task manager that actually remembers your tasks — even after you close the tab. Add, complete, and delete tasks dynamically using pure JavaScript DOM manipulation, with Local Storage handling persistence. No frameworks, no database — just vanilla JS doing the job.</p>
+            <a href="https://josephkominor.github.io/task-manager/">View Task Manager</a>
+        </div>
+
+    </div>
+</section>
+
+     <section id="contact">
+    <h2>Let's Build Something</h2>
+    <div class="contact-card">
+        <p class="contact-text">Always happy to talk frontend, design, or just say hi. Let's connect.</p>
+        <a href="mailto:jkominor@gmail.com" class="contact-email">jkominor@gmail.com</a>
+        <div class="contact-links">
+            <a href="https://github.com/josephkominor" target="_blank">GitHub</a>
+            <a href="https://www.linkedin.com/in/joseph-kominor-5ab166390?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank">LinkedIn</a>
+        </div>
+    </div>
+</section>
 
 
 <script src="script.js"></script>
